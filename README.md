@@ -1,11 +1,48 @@
-# Getting Started with Create React App
+# API Docs Hub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project documents the Unsplash Photos API and the Rick & Morty APIs. Its goal is to help business owners understand the use cases of APIs and developers to know how to utilize the APIs. The project also has usecases for the two APIs to showcase how they work.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+1. [Project Structure](#project-structure)
+2. [Technologies Used](#technologies-used)
+3. [Installation](#installation)
 
+## Project structure 
+
+- **/src**: Contains all the source code for the project.
+  - **/components**: Reusable UI components used throughout the application.
+    - `Navbar.js`: Navigation component.
+    - `Footer.js`: Footer component.
+    - `LandingPage.js`: Landing page component.
+    - `UnsplashDocs.js`: Component for displaying Unsplash API documentation.
+    - `RickAndMortyDocs.js`: Component for displaying Rick and Morty API documentation.
+  - **/pages**: Components that represent different pages of the application.
+    - `Home.js`: Main landing page or homepage component.
+    - `Unsplash.js`: Page component for Unsplash API use case.
+    - `RickAndMorty.js`: Page component for Rick and Morty API use case.
+  - **/utils**: Utility functions and modules.
+    - `api.js`: Contains functions to interact with external APIs (Unsplash and Rick & Morty APIs).
+  - `App.js`: Main application component where routing and overall layout are defined.
+  - `index.js`: Entry point of the React application where the app is rendered into the DOM.
+- **/tests**: Test files for unit or integration testing.
+  - `App.test.js`: Tests related to the main App component.
+  - `UnsplashDocs.test.js`: Tests related to Unsplash API documentation component.
+  - `RickAndMortyDocs.test.js`: Tests related to Rick and Morty API documentation component.
+- **.eslintrc.js**: ESLint configuration file for maintaining code quality and style consistency.
+- **package.json**: Configuration file for npm dependencies and scripts.
+- **README.md**: Project documentation file providing an overview, installation instructions, usage guidelines, API documentation, contributing guidelines, and license information.
+
+## Technologies Used
+- **Frontend Framework**: React.js
+- **Styling**: Tailwind CSS
+- **API Client**: Axios for making API requests
+- **Code Linting**: ESLint
+- **Testing**: Jest and React Testing Library
+- **CI/CD**: GitHub Actions
+- **Deployment**: Vercel
+
+## Installation
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -29,42 +66,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
